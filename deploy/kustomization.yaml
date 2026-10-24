@@ -1,0 +1,7 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - swe-demo.yaml
+images:
+  - name: tranminhhai/swe4006-minikube-demo
+    newTag: latest
